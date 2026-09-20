@@ -140,9 +140,12 @@
   <!-- ===================== HERO CONTAINER (Transparent Header + Full Hero Image) ===================== -->
   <div class="relative w-full overflow-hidden bg-[#0A87D0]">
 
-    <!-- Hero Background Image (covers entire hero, aligned right on mobile so phone and travel elements appear) -->
-    <img src="assets/hero-bg.jpg" alt="Voyage TripnGo"
-      class="absolute inset-0 w-full h-full object-cover object-right md:object-top select-none pointer-events-none">
+    <!-- Hero Background Image (Responsive: mobile-specific banner on phone, panoramic banner on desktop) -->
+    <picture class="absolute inset-0 w-full h-full select-none pointer-events-none">
+      <source media="(max-width: 767px)" srcset="assets/hero-bg-mobile.jpg">
+      <img src="assets/hero-bg.jpg" alt="Voyage TripnGo"
+        class="w-full h-full object-cover object-right md:object-top select-none pointer-events-none">
+    </picture>
 
     <!-- ===================== HEADER ===================== -->
     <header class="relative z-30 w-full pt-4 md:pt-6">
