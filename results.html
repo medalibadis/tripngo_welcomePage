@@ -108,40 +108,34 @@
         </a>
 
         <!-- Header Right Actions: EN, B2B Space PRO, Client Space -->
-        <div class="flex items-center gap-2.5 sm:gap-3.5">
+        <div class="flex items-center gap-2 sm:gap-3">
           
           <!-- Language Selector -->
           <div class="relative">
-            <button class="flex items-center gap-1.5 px-3 py-1.5 rounded-full border border-slate-200/80 bg-white/95 hover:bg-white text-xs font-semibold text-slate-700 shadow-xs transition-colors cursor-pointer">
+            <button class="flex items-center gap-1 sm:gap-1.5 px-2 sm:px-3 py-1.5 rounded-full border border-slate-200/80 bg-white/95 hover:bg-white text-xs font-semibold text-slate-700 shadow-xs transition-colors cursor-pointer">
               <span class="text-sm">🇬🇧</span>
-              <span>EN</span>
-              <svg class="w-3.5 h-3.5 text-slate-400" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24">
+              <span class="hidden xs:inline">EN</span>
+              <svg class="w-3 h-3 text-slate-400 hidden sm:block" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24">
                 <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" />
               </svg>
             </button>
           </div>
 
-          <!-- B2B Space Button (Blue with PRO badge) -->
-          <a href="#b2b" class="flex items-center gap-2 bg-[#0090D9] hover:bg-[#007ebb] text-white px-3.5 sm:px-4 py-1.5 sm:py-2 rounded-full shadow-sm hover:shadow transition-all group">
-            <svg class="w-4 h-4 sm:w-4.5 sm:h-4.5 text-white flex-shrink-0" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+          <!-- B2B Space Button (Blue with PRO badge) — icon only on mobile -->
+          <a href="#b2b" class="flex items-center gap-1.5 bg-[#0090D9] hover:bg-[#007ebb] text-white px-2.5 sm:px-4 py-1.5 sm:py-2 rounded-full shadow-sm hover:shadow transition-all">
+            <svg class="w-4 h-4 text-white flex-shrink-0" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
               <path stroke-linecap="round" stroke-linejoin="round" d="M16 11V7a4 4 0 00-8 0v4M5 9h14l1 12H4L5 9z" />
             </svg>
-            <div class="flex items-baseline gap-1.5 leading-none">
-              <span class="text-xs sm:text-[13px] font-bold tracking-tight">B2B Space</span>
-              <span class="text-[9px] text-white/80 font-semibold tracking-wider uppercase hidden sm:inline">ENTERPRISE</span>
-            </div>
-            <span class="ml-0.5 bg-white/20 text-white text-[10px] font-extrabold px-1.5 py-0.5 rounded-full uppercase tracking-wider">PRO</span>
+            <span class="hidden sm:inline text-xs font-bold tracking-tight">B2B Space</span>
+            <span class="hidden sm:inline bg-white/20 text-white text-[10px] font-extrabold px-1.5 py-0.5 rounded-full uppercase tracking-wider">PRO</span>
           </a>
 
-          <!-- Client Space Button -->
-          <a href="#client" class="flex items-center gap-1.5 sm:gap-2 px-3 sm:px-4 py-1.5 sm:py-2 rounded-full border border-slate-200/80 bg-white/95 hover:bg-white text-xs sm:text-[13px] font-semibold text-slate-700 shadow-xs transition-colors">
+          <!-- Client Space Button — icon only on mobile -->
+          <a href="#client" class="flex items-center gap-1.5 px-2.5 sm:px-4 py-1.5 sm:py-2 rounded-full border border-slate-200/80 bg-white/95 hover:bg-white text-xs font-semibold text-slate-700 shadow-xs transition-colors">
             <svg class="w-4 h-4 text-slate-600 flex-shrink-0" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
               <path stroke-linecap="round" stroke-linejoin="round" d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z" />
             </svg>
-            <span class="hidden sm:inline">Client space</span>
-            <svg class="w-3.5 h-3.5 text-slate-400 hidden sm:inline" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24">
-              <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" />
-            </svg>
+            <span class="hidden sm:inline">Espace client</span>
           </a>
 
         </div>
@@ -149,151 +143,157 @@
     </header>
 
     <!-- Hero Content Left Banner -->
-    <div class="relative z-10 max-w-[1340px] mx-auto px-4 sm:px-6 lg:px-8 pt-6 pb-20 md:pt-8 md:pb-24">
+    <div class="relative z-10 max-w-[1340px] mx-auto px-4 sm:px-6 lg:px-8 pt-4 pb-16 sm:pt-6 md:pt-8 md:pb-24">
       <div class="max-w-xl">
-        <h1 class="text-3xl sm:text-4xl lg:text-[44px] font-black text-white leading-[1.12] tracking-tight drop-shadow-[0_2px_8px_rgba(0,0,0,0.18)]">
+        <h1 class="text-2xl sm:text-4xl lg:text-[44px] font-black text-white leading-[1.12] tracking-tight drop-shadow-[0_2px_8px_rgba(0,0,0,0.18)]">
           Votre prochain voyage<br>
           <span class="text-[#34D399]">commence ici.</span>
         </h1>
-        <p class="mt-2.5 sm:mt-3 text-white/95 text-xs sm:text-sm font-normal leading-relaxed max-w-sm sm:max-w-md drop-shadow-[0_1px_4px_rgba(0,0,0,0.2)]">
-          Réservez vos vols simplement, rapidement,<br class="hidden sm:inline"> partout dans le monde.
+        <p class="mt-2 sm:mt-3 text-white/90 text-xs sm:text-sm font-normal leading-relaxed max-w-sm sm:max-w-md drop-shadow-[0_1px_4px_rgba(0,0,0,0.2)] hidden sm:block">
+          Réservez vos vols simplement, rapidement, partout dans le monde.
         </p>
       </div>
     </div>
   </div>
 
   <!-- ===================== FLOATING SEARCH SUMMARY / SEARCH BAR ===================== -->
-  <div class="relative z-20 max-w-[1360px] mx-auto px-4 sm:px-6 lg:px-8 -mt-12 sm:-mt-14">
-    <div class="bg-white/95 backdrop-blur-md rounded-2xl lg:rounded-3xl shadow-[0_20px_50px_rgba(7,50,91,0.12),0_4px_16px_rgba(0,0,0,0.04)] border border-slate-200/90 p-3 sm:p-3.5 lg:py-4 lg:px-6 flex flex-wrap lg:flex-nowrap items-center justify-between gap-3 lg:gap-2 ring-1 ring-slate-900/5">
-      
-      <!-- 1. Trip Type Pill -->
-      <button onclick="openSearchModal()" class="flex items-center gap-3 px-3.5 py-2.5 rounded-2xl hover:bg-slate-100/80 transition-all duration-150 shrink-0 cursor-pointer group">
-        <svg class="w-5 h-5 text-[#0090D9] group-hover:scale-110 transition-transform" fill="none" stroke="currentColor" stroke-width="2.2" viewBox="0 0 24 24">
-          <path stroke-linecap="round" stroke-linejoin="round" d="M12 19l9 2-9-18-9 18 9-2zm0 0v-8" />
-        </svg>
-        <div class="flex flex-col text-left">
-          <span class="text-[10.5px] font-extrabold text-slate-400 uppercase tracking-widest leading-none">Type de vol</span>
-          <div class="flex items-center gap-1.5 mt-1">
-            <span class="text-[14px] sm:text-[15px] font-black text-[#07325B] leading-tight">Aller-retour</span>
-            <svg class="w-3.5 h-3.5 text-slate-400 group-hover:text-[#0090D9] transition-colors" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24">
-              <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" />
-            </svg>
+  <div class="relative z-20 max-w-[1360px] mx-auto px-4 sm:px-6 lg:px-8 -mt-10 sm:-mt-12 sm:-mt-14">
+    <div class="bg-white/95 backdrop-blur-md rounded-2xl lg:rounded-3xl shadow-[0_20px_50px_rgba(7,50,91,0.12),0_4px_16px_rgba(0,0,0,0.04)] border border-slate-200/90 ring-1 ring-slate-900/5 overflow-hidden">
+
+      <!-- MOBILE: Compact summary row -->
+      <div class="flex lg:hidden items-center gap-0 divide-x divide-slate-100">
+        <!-- Route -->
+        <button onclick="openSearchModal()" class="flex-1 flex flex-col items-start px-3.5 py-3 hover:bg-slate-50 transition-colors min-w-0">
+          <span class="text-[9px] font-extrabold text-slate-400 uppercase tracking-widest">Itinéraire</span>
+          <div class="flex items-center gap-1.5 mt-0.5 w-full min-w-0">
+            <span class="text-[13px] font-black text-[#07325B] truncate">ALG</span>
+            <svg class="w-3 h-3 text-[#0090D9] shrink-0" fill="currentColor" viewBox="0 0 24 24"><path d="M21 16v-2l-8-5V3.5a1.5 1.5 0 00-3 0V9l-8 5v2l8-2.5V19l-2.5 1.5V22l4-1 4 1v-1.5L13 19v-5.5l8 2.5z"/></svg>
+            <span class="text-[13px] font-black text-[#07325B] truncate">CDG</span>
           </div>
-        </div>
-      </button>
-
-      <div class="hidden lg:block w-px h-11 bg-slate-200/90 mx-1"></div>
-
-      <!-- 2. Flight Route: Origin & Destination -->
-      <div onclick="openSearchModal()" class="flex items-center gap-4 px-4 py-2 rounded-2xl hover:bg-slate-100/80 transition-all duration-150 cursor-pointer group flex-1 min-w-0 max-w-lg">
-        <!-- Origin -->
-        <div class="flex flex-col text-left min-w-0 flex-1">
-          <span class="text-[10.5px] font-extrabold text-slate-400 uppercase tracking-widest leading-none">Départ</span>
-          <span class="text-[15px] sm:text-[16px] font-black text-[#07325B] leading-tight mt-1 truncate group-hover:text-[#0090D9] transition-colors">Alger (ALG)</span>
-          <span class="text-[11.5px] text-slate-400 font-medium truncate leading-tight mt-0.5">Houari Boumediene</span>
-        </div>
-
-        <!-- Sleek Route Connector with Plane -->
-        <div class="flex flex-col items-center justify-center shrink-0 px-1.5">
-          <div class="flex items-center gap-1.5">
-            <span class="w-4 sm:w-7 h-[2px] bg-slate-300 rounded-full"></span>
-            <svg class="w-4 h-4 text-[#0090D9] transform rotate-90 group-hover:translate-x-0.5 transition-transform" fill="currentColor" viewBox="0 0 24 24">
-              <path d="M21 16v-2l-8-5V3.5a1.5 1.5 0 00-3 0V9l-8 5v2l8-2.5V19l-2.5 1.5V22l4-1 4 1v-1.5L13 19v-5.5l8 2.5z" />
-            </svg>
-            <span class="w-4 sm:w-7 h-[2px] bg-slate-300 rounded-full"></span>
-          </div>
-          <span class="text-[9.5px] font-extrabold text-slate-400 mt-1 uppercase tracking-wider">Direct</span>
-        </div>
-
-        <!-- Destination -->
-        <div class="flex flex-col text-left min-w-0 flex-1">
-          <span class="text-[10.5px] font-extrabold text-slate-400 uppercase tracking-widest leading-none">Arrivée</span>
-          <span class="text-[15px] sm:text-[16px] font-black text-[#07325B] leading-tight mt-1 truncate group-hover:text-[#0090D9] transition-colors">Paris (CDG)</span>
-          <span class="text-[11.5px] text-slate-400 font-medium truncate leading-tight mt-0.5">Charles de Gaulle</span>
-        </div>
+          <span class="text-[10px] text-slate-400 font-medium mt-0.5 truncate w-full">13 Oct → 20 Oct</span>
+        </button>
+        <!-- Passengers -->
+        <button onclick="openSearchModal()" class="shrink-0 flex flex-col items-start px-3 py-3 hover:bg-slate-50 transition-colors">
+          <span class="text-[9px] font-extrabold text-slate-400 uppercase tracking-widest">Passagers</span>
+          <span class="text-[13px] font-black text-[#07325B] mt-0.5">1 Adulte</span>
+          <span class="text-[10px] text-slate-400 font-medium mt-0.5">Économique</span>
+        </button>
+        <!-- CTA -->
+        <button onclick="openSearchModal()" class="shrink-0 bg-[#F5B819] hover:bg-[#E5AA15] text-slate-950 px-4 py-3 self-stretch flex flex-col items-center justify-center gap-1 transition-colors">
+          <svg class="w-4.5 h-4.5" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24">
+            <circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/>
+          </svg>
+          <span class="text-[10px] font-black">Modifier</span>
+        </button>
       </div>
 
-      <div class="hidden lg:block w-px h-11 bg-slate-200/90 mx-1"></div>
-
-      <!-- 3. Dates -->
-      <div onclick="openSearchModal()" class="flex items-center gap-3 px-3.5 py-2 rounded-2xl hover:bg-slate-100/80 transition-all duration-150 cursor-pointer group shrink-0">
-        <svg class="w-5 h-5 text-slate-500 group-hover:text-[#0090D9] transition-colors shrink-0" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
-          <rect x="3" y="4" width="18" height="18" rx="2" ry="2" />
-          <line x1="16" y1="2" x2="16" y2="6" />
-          <line x1="8" y1="2" x2="8" y2="6" />
-          <line x1="3" y1="10" x2="21" y2="10" />
-        </svg>
-        <div class="flex flex-col text-left">
-          <span class="text-[10.5px] font-extrabold text-slate-400 uppercase tracking-widest leading-none">Dates</span>
-          <div class="flex items-center gap-2 mt-1">
-            <span class="text-[15px] sm:text-[16px] font-black text-[#07325B] leading-tight">13 Oct</span>
-            <span class="text-[11px] text-slate-300 font-bold">→</span>
-            <span class="text-[15px] sm:text-[16px] font-black text-[#07325B] leading-tight">20 Oct</span>
-            <svg class="w-3.5 h-3.5 text-slate-400 group-hover:text-[#0090D9] transition-colors" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24">
-              <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" />
-            </svg>
+      <!-- DESKTOP: Full expanded bar -->
+      <div class="hidden lg:flex items-center justify-between gap-2 py-4 px-6">
+        
+        <!-- 1. Trip Type Pill -->
+        <button onclick="openSearchModal()" class="flex items-center gap-3 px-3.5 py-2.5 rounded-2xl hover:bg-slate-100/80 transition-all duration-150 shrink-0 cursor-pointer group">
+          <svg class="w-5 h-5 text-[#0090D9]" fill="none" stroke="currentColor" stroke-width="2.2" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M12 19l9 2-9-18-9 18 9-2zm0 0v-8" />
+          </svg>
+          <div class="flex flex-col text-left">
+            <span class="text-[10.5px] font-extrabold text-slate-400 uppercase tracking-widest leading-none">Type de vol</span>
+            <div class="flex items-center gap-1.5 mt-1">
+              <span class="text-[15px] font-black text-[#07325B] leading-tight">Aller-retour</span>
+              <svg class="w-3.5 h-3.5 text-slate-400" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" /></svg>
+            </div>
           </div>
-          <span class="text-[11.5px] text-slate-400 font-medium leading-tight mt-0.5">7 jours sur place</span>
-        </div>
-      </div>
+        </button>
 
-      <div class="hidden lg:block w-px h-11 bg-slate-200/90 mx-1"></div>
+        <div class="w-px h-11 bg-slate-200/90 mx-1"></div>
 
-      <!-- 4. Passengers / Cabin -->
-      <div onclick="openSearchModal()" class="flex items-center gap-3 px-3.5 py-2 rounded-2xl hover:bg-slate-100/80 transition-all duration-150 cursor-pointer group shrink-0">
-        <svg class="w-5 h-5 text-slate-500 group-hover:text-[#0090D9] transition-colors shrink-0" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
-          <path stroke-linecap="round" stroke-linejoin="round" d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z" />
-        </svg>
-        <div class="flex flex-col text-left">
-          <span class="text-[10.5px] font-extrabold text-slate-400 uppercase tracking-widest leading-none">Passagers</span>
-          <div class="flex items-center gap-1.5 mt-1">
-            <span class="text-[15px] sm:text-[16px] font-black text-[#07325B] leading-tight">1 Adulte</span>
-            <svg class="w-3.5 h-3.5 text-slate-400 group-hover:text-[#0090D9] transition-colors" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24">
-              <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" />
-            </svg>
+        <!-- 2. Flight Route -->
+        <div onclick="openSearchModal()" class="flex items-center gap-4 px-4 py-2 rounded-2xl hover:bg-slate-100/80 transition-all duration-150 cursor-pointer group flex-1 min-w-0 max-w-lg">
+          <div class="flex flex-col text-left min-w-0 flex-1">
+            <span class="text-[10.5px] font-extrabold text-slate-400 uppercase tracking-widest leading-none">Départ</span>
+            <span class="text-[15px] font-black text-[#07325B] leading-tight mt-1 truncate group-hover:text-[#0090D9] transition-colors">Alger (ALG)</span>
+            <span class="text-[11.5px] text-slate-400 font-medium truncate leading-tight mt-0.5">Houari Boumediene</span>
           </div>
-          <span class="text-[11.5px] text-slate-400 font-medium leading-tight mt-0.5">Classe Économique</span>
+          <div class="flex flex-col items-center justify-center shrink-0 px-1.5">
+            <div class="flex items-center gap-1.5">
+              <span class="w-7 h-[2px] bg-slate-300 rounded-full"></span>
+              <svg class="w-4 h-4 text-[#0090D9] rotate-90" fill="currentColor" viewBox="0 0 24 24"><path d="M21 16v-2l-8-5V3.5a1.5 1.5 0 00-3 0V9l-8 5v2l8-2.5V19l-2.5 1.5V22l4-1 4 1v-1.5L13 19v-5.5l8 2.5z" /></svg>
+              <span class="w-7 h-[2px] bg-slate-300 rounded-full"></span>
+            </div>
+            <span class="text-[9.5px] font-extrabold text-slate-400 mt-1 uppercase tracking-wider">Direct</span>
+          </div>
+          <div class="flex flex-col text-left min-w-0 flex-1">
+            <span class="text-[10.5px] font-extrabold text-slate-400 uppercase tracking-widest leading-none">Arrivée</span>
+            <span class="text-[15px] font-black text-[#07325B] leading-tight mt-1 truncate group-hover:text-[#0090D9] transition-colors">Paris (CDG)</span>
+            <span class="text-[11.5px] text-slate-400 font-medium truncate leading-tight mt-0.5">Charles de Gaulle</span>
+          </div>
         </div>
+
+        <div class="w-px h-11 bg-slate-200/90 mx-1"></div>
+
+        <!-- 3. Dates -->
+        <div onclick="openSearchModal()" class="flex items-center gap-3 px-3.5 py-2 rounded-2xl hover:bg-slate-100/80 transition-all duration-150 cursor-pointer group shrink-0">
+          <svg class="w-5 h-5 text-slate-500 group-hover:text-[#0090D9] transition-colors shrink-0" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+            <rect x="3" y="4" width="18" height="18" rx="2" ry="2" /><line x1="16" y1="2" x2="16" y2="6" /><line x1="8" y1="2" x2="8" y2="6" /><line x1="3" y1="10" x2="21" y2="10" />
+          </svg>
+          <div class="flex flex-col text-left">
+            <span class="text-[10.5px] font-extrabold text-slate-400 uppercase tracking-widest leading-none">Dates</span>
+            <div class="flex items-center gap-2 mt-1">
+              <span class="text-[15px] font-black text-[#07325B] leading-tight">13 Oct</span>
+              <span class="text-[11px] text-slate-300 font-bold">→</span>
+              <span class="text-[15px] font-black text-[#07325B] leading-tight">20 Oct</span>
+              <svg class="w-3.5 h-3.5 text-slate-400 group-hover:text-[#0090D9]" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" /></svg>
+            </div>
+            <span class="text-[11.5px] text-slate-400 font-medium leading-tight mt-0.5">7 jours sur place</span>
+          </div>
+        </div>
+
+        <div class="w-px h-11 bg-slate-200/90 mx-1"></div>
+
+        <!-- 4. Passengers -->
+        <div onclick="openSearchModal()" class="flex items-center gap-3 px-3.5 py-2 rounded-2xl hover:bg-slate-100/80 transition-all duration-150 cursor-pointer group shrink-0">
+          <svg class="w-5 h-5 text-slate-500 group-hover:text-[#0090D9] shrink-0" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z" />
+          </svg>
+          <div class="flex flex-col text-left">
+            <span class="text-[10.5px] font-extrabold text-slate-400 uppercase tracking-widest leading-none">Passagers</span>
+            <div class="flex items-center gap-1.5 mt-1">
+              <span class="text-[15px] font-black text-[#07325B] leading-tight">1 Adulte</span>
+              <svg class="w-3.5 h-3.5 text-slate-400 group-hover:text-[#0090D9]" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" /></svg>
+            </div>
+            <span class="text-[11.5px] text-slate-400 font-medium leading-tight mt-0.5">Classe Économique</span>
+          </div>
+        </div>
+
+        <!-- 5. CTA Button -->
+        <button onclick="openSearchModal()" class="flex items-center justify-center gap-2.5 bg-gradient-to-r from-[#F5B819] via-[#F8C136] to-[#F5B819] hover:from-[#E5AA15] hover:to-[#E5AA15] text-slate-950 px-8 py-4 rounded-2xl font-black text-[15px] shadow-[0_4px_18px_rgba(245,184,25,0.42)] hover:shadow-[0_6px_24px_rgba(245,184,25,0.52)] transition-all duration-200 shrink-0 cursor-pointer transform hover:-translate-y-0.5 active:scale-95">
+          <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><circle cx="11" cy="11" r="8" /><line x1="21" y1="21" x2="16.65" y2="16.65" /></svg>
+          <span>Modifier</span>
+        </button>
+
       </div>
-
-      <!-- 5. Search CTA Button -->
-      <button onclick="openSearchModal()" class="w-full lg:w-auto flex items-center justify-center gap-2.5 bg-gradient-to-r from-[#F5B819] via-[#F8C136] to-[#F5B819] hover:from-[#E5AA15] hover:via-[#EEB220] hover:to-[#E5AA15] text-slate-950 px-7 sm:px-8 py-3.5 sm:py-4 rounded-2xl font-black text-sm sm:text-[15px] shadow-[0_4px_18px_rgba(245,184,25,0.42)] hover:shadow-[0_6px_24px_rgba(245,184,25,0.52)] transition-all duration-200 shrink-0 cursor-pointer transform hover:-translate-y-0.5 active:scale-95">
-        <svg class="w-4.5 h-4.5 text-slate-950" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24">
-          <circle cx="11" cy="11" r="8" />
-          <line x1="21" y1="21" x2="16.65" y2="16.65" />
-        </svg>
-        <span>Modifier</span>
-      </button>
-
     </div>
   </div>
 
   <!-- ===================== MAIN LAYOUT ===================== -->
   <main class="max-w-[1340px] mx-auto px-4 sm:px-6 lg:px-8 pt-8 pb-16 w-full flex-1">
     
-    <!-- Mobile Top Action Button: Disponibilités (Single Calendar Icon) -->
-    <div class="lg:hidden mb-3">
-      <button onclick="openDisponibilitesModal()" class="w-full inline-flex items-center justify-center gap-2.5 bg-[#F5B819] hover:bg-[#E5AA15] text-slate-950 font-black text-sm px-4 py-3 rounded-2xl shadow-[0_4px_16px_rgba(245,184,25,0.35)] transition cursor-pointer">
-        <svg class="w-4.5 h-4.5 text-slate-950" fill="none" stroke="currentColor" stroke-width="2.2" viewBox="0 0 24 24">
+    <!-- Mobile Top Controls: Disponibilités + Filtres in one row -->
+    <div class="lg:hidden mb-4 flex items-center gap-2">
+      <button onclick="openDisponibilitesModal()" class="flex items-center justify-center gap-2 bg-[#F5B819] hover:bg-[#E5AA15] text-slate-950 font-black text-sm px-4 py-2.5 rounded-xl shadow-[0_4px_16px_rgba(245,184,25,0.30)] transition cursor-pointer shrink-0">
+        <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2.2" viewBox="0 0 24 24">
           <rect x="3" y="4" width="18" height="18" rx="2" ry="2"/>
           <line x1="16" y1="2" x2="16" y2="6"/>
           <line x1="8" y1="2" x2="8" y2="6"/>
           <line x1="3" y1="10" x2="21" y2="10"/>
         </svg>
-        <span class="tracking-tight">Disponibilités</span>
+        <span>Disponibilités</span>
       </button>
-    </div>
 
-    <!-- Mobile Filter Toggle Button -->
-    <div class="lg:hidden mb-4 flex items-center justify-between bg-white p-3.5 rounded-2xl border border-slate-100 shadow-xs">
-      <div class="flex items-center gap-2 text-slate-800 font-bold text-sm">
+      <button onclick="toggleMobileFilters()" class="flex-1 flex items-center justify-center gap-2 bg-white border border-slate-200 text-slate-700 font-bold text-sm px-4 py-2.5 rounded-xl shadow-xs transition cursor-pointer">
         <svg class="w-4 h-4 text-[#0090D9]" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
           <path stroke-linecap="round" stroke-linejoin="round" d="M12 6V4m0 2a2 2 0 100 4m0-4a2 2 0 110 4m-6 8a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4m6 6v10m6-2a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4" />
         </svg>
-        <span>Filtres de recherche</span>
-      </div>
-      <button onclick="toggleMobileFilters()" class="text-xs font-bold text-[#0090D9] bg-sky-50 px-3 py-1.5 rounded-xl">
-        Afficher / Masquer
+        <span>Filtres</span>
       </button>
     </div>
 
@@ -635,462 +635,106 @@
         </div>
 
         <!-- ===================== FLIGHT RESULTS LIST ===================== -->
-        <div id="flightResultsList" class="space-y-3.5">
+        <div id="flightResultsList" class="space-y-3">
 
           <!-- ==================== CARD 1: AIR ALGÉRIE ==================== -->
-          <article data-card-airline="ah" class="group bg-white rounded-2xl border border-slate-200/80 shadow-[0_2px_12px_rgba(0,0,0,0.03)] hover:shadow-[0_8px_24px_rgba(0,144,217,0.12)] hover:border-[#0090D9]/40 transition-all duration-300 overflow-hidden">
-            <div class="grid grid-cols-1 lg:grid-cols-12">
-              
-              <!-- SECTION 1: BLUE (Route & Horaires) -->
-              <div class="lg:col-span-5 bg-gradient-to-br from-[#0090D9]/10 via-[#0090D9]/5 to-white p-3.5 sm:p-4 border-b lg:border-b-0 lg:border-r border-sky-100 flex flex-col justify-between">
-                <!-- Top airline info -->
-                <div class="flex items-center justify-between gap-3 mb-2.5">
-                  <div class="flex items-center gap-2.5">
-                    <div class="w-9 h-9 rounded-lg bg-white border border-sky-100 shadow-xs flex items-center justify-center p-1 shrink-0">
-                      <img src="assets/airlines/air-algerie-emblem.svg" alt="Air Algérie" class="w-full h-full object-contain">
-                    </div>
-                    <div>
-                      <div class="text-sm font-extrabold text-[#07325B] tracking-tight leading-none">Air Algérie</div>
-                      <div class="text-[11px] font-semibold text-slate-500 mt-0.5">Vol AH 1002</div>
-                    </div>
-                  </div>
-                  <span class="inline-flex items-center gap-1 px-2.5 py-0.5 rounded-full text-[11px] font-bold bg-[#0090D9]/15 text-[#0077b6] border border-[#0090D9]/20">
-                    <span class="w-1.5 h-1.5 rounded-full bg-[#0090D9]"></span>
-                    Direct
-                  </span>
+          <article data-card-airline="ah" class="group bg-white rounded-2xl border border-slate-200/80 shadow-[0_2px_12px_rgba(0,0,0,0.03)] hover:shadow-[0_8px_24px_rgba(0,144,217,0.10)] hover:border-[#0090D9]/30 transition-all duration-300 overflow-hidden border-l-4 border-l-[#0090D9]">
+            <!-- ── MOBILE layout ── -->
+            <div class="p-4 flex flex-col gap-3 lg:hidden">
+              <div class="flex items-center justify-between gap-2">
+                <div class="flex items-center gap-2.5">
+                  <div class="w-9 h-9 rounded-xl bg-slate-50 border border-slate-200 flex items-center justify-center p-1.5 shrink-0"><img src="assets/airlines/air-algerie-emblem.svg" alt="Air Algérie" class="w-full h-full object-contain"></div>
+                  <div><div class="text-sm font-extrabold text-[#07325B]">Air Algérie</div><div class="text-[11px] text-slate-400">Vol AH 1002</div></div>
                 </div>
-
-                <!-- Flight Times & Route -->
-                <div class="flex items-center justify-between gap-3 my-1">
-                  <div class="text-left">
-                    <div class="text-xl sm:text-2xl font-black text-[#07325B] leading-none">07:15</div>
-                    <div class="text-xs font-bold text-slate-700 mt-0.5">ALG</div>
-                    <div class="text-[10px] text-slate-500 leading-tight">Alger</div>
-                  </div>
-
-                  <div class="flex-1 flex flex-col items-center px-2">
-                    <span class="text-[10px] font-bold text-slate-500 mb-0.5">2h 30m</span>
-                    <div class="w-full flex items-center gap-1">
-                      <div class="w-1.5 h-1.5 rounded-full border border-[#0090D9] bg-white shrink-0"></div>
-                      <div class="flex-1 h-[2px] bg-gradient-to-r from-[#0090D9] via-sky-400 to-[#0090D9] relative">
-                        <svg class="w-3 h-3 text-[#0090D9] absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 rotate-90" fill="currentColor" viewBox="0 0 24 24">
-                          <path d="M21 16v-2l-8-5V3.5c0-.83-.67-1.5-1.5-1.5S10 2.67 10 3.5V9l-8 5v2l8-2.5V19l-2 1.5V22l3.5-1 3.5 1v-1.5L13 19v-5.5l8 2.5z"/>
-                        </svg>
-                      </div>
-                      <div class="w-1.5 h-1.5 rounded-full bg-[#0090D9] shrink-0"></div>
-                    </div>
-                    <span class="text-[9px] font-medium text-emerald-600 mt-0.5">Sans escale</span>
-                  </div>
-
-                  <div class="text-right">
-                    <div class="text-xl sm:text-2xl font-black text-[#07325B] leading-none">10:45</div>
-                    <div class="text-xs font-bold text-slate-700 mt-0.5">CDG</div>
-                    <div class="text-[10px] text-slate-500 leading-tight">Paris</div>
-                  </div>
-                </div>
-
-                <div class="mt-2.5 pt-1.5 border-t border-sky-100/80 flex items-center justify-between text-[10px] text-slate-500">
-                  <span>24 Mars 2026</span>
-                  <span class="text-[#0090D9] font-medium">Terminal 1 → 2E</span>
-                </div>
+                <span class="inline-flex items-center gap-1 px-2.5 py-0.5 rounded-full text-[11px] font-bold bg-[#0090D9]/10 text-[#0090D9] border border-[#0090D9]/20 shrink-0"><span class="w-1.5 h-1.5 rounded-full bg-[#0090D9]"></span>Direct</span>
               </div>
-
-              <!-- SECTION 2: YELLOW (Flight Details & 2 Baggage Types) -->
-              <div class="lg:col-span-4 bg-gradient-to-br from-[#F5B819]/15 via-[#F5B819]/5 to-white p-3.5 sm:p-4 border-b lg:border-b-0 lg:border-r border-amber-200/70 flex flex-col justify-center gap-2.5">
-                <div>
-                  <div class="text-sm font-bold text-slate-800 flex items-center gap-1.5">
-                    <span>Boeing 737-800</span>
-                    <span class="text-amber-400">•</span>
-                    <span class="text-slate-600 font-medium">Économique</span>
-                  </div>
-                  <!-- Two Baggage Types: Soute + Cabine -->
-                  <div class="flex flex-wrap items-center gap-x-2.5 gap-y-1 text-xs text-slate-600 mt-1.5">
-                    <div class="flex items-center gap-1" title="Bagage en soute">
-                      <svg class="w-3.5 h-3.5 text-amber-700 shrink-0" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10"/></svg>
-                      <span>Soute : <strong class="text-slate-800 font-semibold">1 × 23 kg</strong></span>
-                    </div>
-                    <span class="text-amber-300">•</span>
-                    <div class="flex items-center gap-1" title="Bagage en cabine">
-                      <svg class="w-3.5 h-3.5 text-amber-700 shrink-0" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M20 7l-8-4-8 4m16 0l-8 4m8-4v10l-8 4m0-10L4 7m8 4v10M4 7v10l8 4"/></svg>
-                      <span>Cabine : <strong class="text-slate-800 font-semibold">1 × 10 kg</strong></span>
-                    </div>
-                  </div>
+              <div class="flex items-center justify-between gap-2">
+                <div><div class="text-2xl font-black text-[#07325B]">07:15</div><div class="text-xs font-bold text-slate-700">ALG — Alger</div></div>
+                <div class="flex-1 flex flex-col items-center px-2">
+                  <span class="text-[10px] font-bold text-slate-400 mb-1">2h 30m</span>
+                  <div class="w-full flex items-center gap-1"><div class="w-1.5 h-1.5 rounded-full border-2 border-[#0090D9] bg-white shrink-0"></div><div class="flex-1 h-[1.5px] bg-[#0090D9]/30 relative"><svg class="w-3.5 h-3.5 text-[#0090D9] absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 rotate-90" fill="currentColor" viewBox="0 0 24 24"><path d="M21 16v-2l-8-5V3.5c0-.83-.67-1.5-1.5-1.5S10 2.67 10 3.5V9l-8 5v2l8-2.5V19l-2 1.5V22l3.5-1 3.5 1v-1.5L13 19v-5.5l8 2.5z"/></svg></div><div class="w-1.5 h-1.5 rounded-full bg-[#0090D9] shrink-0"></div></div>
+                  <span class="text-[9px] font-semibold text-[#34D399] mt-1">Sans escale</span>
                 </div>
-
-                <div class="flex flex-wrap items-center gap-1.5 pt-2 border-t border-amber-200/50">
-                  <span class="inline-flex items-center gap-1 text-[10px] font-semibold px-2 py-0.5 rounded-full bg-emerald-100/90 text-emerald-800">
-                    <span class="w-1.5 h-1.5 rounded-full bg-emerald-500"></span>
-                    Remboursable
-                  </span>
-                  <span class="inline-flex items-center gap-1 text-[10px] font-semibold px-2 py-0.5 rounded-full bg-amber-100/90 text-amber-900">
-                    <span class="w-1.5 h-1.5 rounded-full bg-amber-500"></span>
-                    Modifiable
-                  </span>
-                </div>
+                <div class="text-right"><div class="text-2xl font-black text-[#07325B]">10:45</div><div class="text-xs font-bold text-slate-700">CDG — Paris</div></div>
               </div>
-
-              <!-- SECTION 3: GREEN (Prix & Réservation) -->
-              <div class="lg:col-span-3 bg-gradient-to-br from-emerald-500/10 via-emerald-500/5 to-white p-3.5 sm:p-4 flex flex-col justify-center items-center lg:items-end text-center lg:text-right">
-                <div class="w-full">
-                  <div class="text-[10px] font-bold uppercase tracking-wider text-slate-400 leading-none">Prix total TTC</div>
-                  <div class="mt-1">
-                    <span class="text-2xl font-black text-slate-900 tracking-tight">38 165</span>
-                    <span class="text-xs font-black text-emerald-700 ml-0.5">DZD</span>
-                  </div>
-                  <div class="text-[10px] text-slate-500 mt-0.5 leading-none">Par passager</div>
+              <div class="flex items-start justify-between gap-3 pt-3 border-t border-slate-100">
+                <div class="text-xs text-slate-500">
+                  <div class="font-semibold text-slate-700">Boeing 737-800 · Éco.</div>
+                  <div class="mt-1 flex flex-wrap gap-x-3 gap-y-0.5"><span class="inline-flex items-center gap-1"><span class="w-1.5 h-1.5 rounded-full bg-[#34D399]"></span>Remboursable</span><span class="inline-flex items-center gap-1"><span class="w-1.5 h-1.5 rounded-full bg-[#F5B819]"></span>Modifiable</span></div>
+                  <div class="mt-1 text-slate-400">Soute 23 kg · Cabine 10 kg</div>
                 </div>
-
-                <div class="w-full mt-2.5">
-                  <button onclick="bookFlight('Air Algérie', '07:15', '10:45', 'Direct (2h30)', '38,165.00 DZD')" class="w-full bg-gradient-to-r from-emerald-500 to-teal-600 hover:from-emerald-600 hover:to-teal-700 text-white font-extrabold py-2.5 px-4 rounded-xl shadow-md shadow-emerald-500/20 hover:shadow-lg hover:shadow-emerald-500/30 flex items-center justify-center gap-2 text-sm transition-all duration-200 cursor-pointer transform hover:-translate-y-0.5">
-                    <span>Choisir ce vol</span>
-                    <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M14 5l7 7m0 0l-7 7m7-7H3"/></svg>
+                <div class="text-right shrink-0">
+                  <div class="text-[10px] text-slate-400 uppercase font-bold tracking-wide">Total TTC</div>
+                  <div class="text-xl font-black text-[#07325B] leading-tight">38 165 <span class="text-xs font-normal text-slate-500">DZD</span></div>
+                  <button onclick="bookFlight('Air Algérie', '38,165.00 DZD')" class="mt-2 bg-[#34D399] hover:bg-[#2bbf88] text-white font-extrabold py-2 px-4 rounded-xl text-sm flex items-center gap-1.5 transition cursor-pointer whitespace-nowrap">
+                    Choisir <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M14 5l7 7m0 0l-7 7m7-7H3"/></svg>
                   </button>
                 </div>
               </div>
-
+            </div>
+            <!-- ── DESKTOP layout ── -->
+            <div class="hidden lg:grid lg:grid-cols-12">
+              <div class="lg:col-span-5 p-5 border-r border-slate-100 flex flex-col justify-between">
+                <div class="flex items-center justify-between gap-3 mb-3"><div class="flex items-center gap-2.5"><div class="w-9 h-9 rounded-xl bg-slate-50 border border-slate-200 flex items-center justify-center p-1.5 shrink-0"><img src="assets/airlines/air-algerie-emblem.svg" alt="Air Algérie" class="w-full h-full object-contain"></div><div><div class="text-sm font-extrabold text-[#07325B]">Air Algérie</div><div class="text-[11px] text-slate-400">Vol AH 1002</div></div></div><span class="inline-flex items-center gap-1 px-2.5 py-0.5 rounded-full text-[11px] font-bold bg-[#0090D9]/10 text-[#0090D9] border border-[#0090D9]/20"><span class="w-1.5 h-1.5 rounded-full bg-[#0090D9]"></span>Direct</span></div>
+                <div class="flex items-center justify-between gap-3"><div><div class="text-2xl font-black text-[#07325B]">07:15</div><div class="text-xs font-bold text-slate-700 mt-0.5">ALG</div><div class="text-[10px] text-slate-400">Alger</div></div><div class="flex-1 flex flex-col items-center px-3"><span class="text-[10px] font-bold text-slate-400 mb-1">2h 30m</span><div class="w-full flex items-center gap-1"><div class="w-1.5 h-1.5 rounded-full border-2 border-[#0090D9] bg-white shrink-0"></div><div class="flex-1 h-[1.5px] bg-[#0090D9]/30 relative"><svg class="w-3.5 h-3.5 text-[#0090D9] absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 rotate-90" fill="currentColor" viewBox="0 0 24 24"><path d="M21 16v-2l-8-5V3.5c0-.83-.67-1.5-1.5-1.5S10 2.67 10 3.5V9l-8 5v2l8-2.5V19l-2 1.5V22l3.5-1 3.5 1v-1.5L13 19v-5.5l8 2.5z"/></svg></div><div class="w-1.5 h-1.5 rounded-full bg-[#0090D9] shrink-0"></div></div><span class="text-[9px] font-semibold text-[#34D399] mt-1">Sans escale</span></div><div class="text-right"><div class="text-2xl font-black text-[#07325B]">10:45</div><div class="text-xs font-bold text-slate-700 mt-0.5">CDG</div><div class="text-[10px] text-slate-400">Paris</div></div></div>
+                <div class="mt-3 pt-2 border-t border-slate-100 flex items-center justify-between text-[10px] text-slate-400"><span>24 Mars 2026</span><span class="text-[#0090D9] font-semibold">Terminal 1 → 2E</span></div>
+              </div>
+              <div class="lg:col-span-4 p-5 border-r border-slate-100 flex flex-col justify-center gap-3">
+                <div><div class="text-sm font-bold text-slate-800">Boeing 737-800 <span class="text-slate-300">·</span> <span class="text-slate-500 font-medium">Économique</span></div><div class="flex flex-wrap gap-x-3 gap-y-1 text-xs text-slate-500 mt-2"><div class="flex items-center gap-1.5"><svg class="w-3.5 h-3.5 text-slate-400 shrink-0" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10"/></svg>Soute : <strong class="text-slate-700">1 × 23 kg</strong></div><div class="flex items-center gap-1.5"><svg class="w-3.5 h-3.5 text-slate-400 shrink-0" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M20 7l-8-4-8 4m16 0l-8 4m8-4v10l-8 4m0-10L4 7m8 4v10M4 7v10l8 4"/></svg>Cabine : <strong class="text-slate-700">1 × 10 kg</strong></div></div></div>
+                <div class="flex flex-wrap gap-1.5 pt-2.5 border-t border-slate-100"><span class="inline-flex items-center gap-1 text-[10px] font-semibold px-2 py-0.5 rounded-full bg-slate-100 text-slate-600"><span class="w-1.5 h-1.5 rounded-full bg-[#34D399]"></span>Remboursable</span><span class="inline-flex items-center gap-1 text-[10px] font-semibold px-2 py-0.5 rounded-full bg-slate-100 text-slate-600"><span class="w-1.5 h-1.5 rounded-full bg-[#F5B819]"></span>Modifiable</span></div>
+              </div>
+              <div class="lg:col-span-3 p-5 flex flex-col justify-center items-end gap-3">
+                <div class="text-right"><div class="text-[10px] font-bold uppercase tracking-wider text-slate-400">Prix total TTC</div><div class="mt-1 flex items-baseline gap-1 justify-end"><span class="text-2xl font-black text-[#07325B]">38 165</span><span class="text-xs text-slate-500">DZD</span></div><div class="text-[10px] text-slate-400 mt-0.5">Par passager</div></div>
+                <button onclick="bookFlight('Air Algérie', '38,165.00 DZD')" class="w-full bg-[#34D399] hover:bg-[#2bbf88] text-white font-extrabold py-2.5 px-4 rounded-xl shadow-sm flex items-center justify-center gap-2 text-sm transition cursor-pointer transform hover:-translate-y-0.5">Choisir ce vol <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M14 5l7 7m0 0l-7 7m7-7H3"/></svg></button>
+              </div>
             </div>
           </article>
 
           <!-- ==================== CARD 2: ITA AIRWAYS ==================== -->
-          <article data-card-airline="az" class="group bg-white rounded-2xl border border-slate-200/80 shadow-[0_2px_12px_rgba(0,0,0,0.03)] hover:shadow-[0_8px_24px_rgba(0,144,217,0.12)] hover:border-[#0090D9]/40 transition-all duration-300 overflow-hidden">
-            <div class="grid grid-cols-1 lg:grid-cols-12">
-              
-              <!-- SECTION 1: BLUE (Route & Horaires) -->
-              <div class="lg:col-span-5 bg-gradient-to-br from-[#0090D9]/10 via-[#0090D9]/5 to-white p-3.5 sm:p-4 border-b lg:border-b-0 lg:border-r border-sky-100 flex flex-col justify-between">
-                <!-- Top airline info -->
-                <div class="flex items-center justify-between gap-3 mb-2.5">
-                  <div class="flex items-center gap-2.5">
-                    <div class="w-9 h-9 rounded-lg bg-white border border-sky-100 shadow-xs flex items-center justify-center p-1 shrink-0">
-                      <img src="assets/airlines/ita-airways.svg" alt="ITA Airways" class="w-full h-full object-contain">
-                    </div>
-                    <div>
-                      <div class="text-sm font-extrabold text-[#07325B] tracking-tight leading-none">ITA Airways</div>
-                      <div class="text-[11px] font-semibold text-slate-500 mt-0.5">Vol AZ 803</div>
-                    </div>
-                  </div>
-                  <span class="inline-flex items-center gap-1 px-2.5 py-0.5 rounded-full text-[11px] font-bold bg-amber-500/15 text-amber-700 border border-amber-500/20">
-                    <span class="w-1.5 h-1.5 rounded-full bg-amber-500"></span>
-                    1 escale (FCO)
-                  </span>
-                </div>
-
-                <!-- Flight Times & Route -->
-                <div class="flex items-center justify-between gap-3 my-1">
-                  <div class="text-left">
-                    <div class="text-xl sm:text-2xl font-black text-[#07325B] leading-none">04:25</div>
-                    <div class="text-xs font-bold text-slate-700 mt-0.5">ALG</div>
-                    <div class="text-[10px] text-slate-500 leading-tight">Alger</div>
-                  </div>
-
-                  <div class="flex-1 flex flex-col items-center px-2">
-                    <span class="text-[10px] font-bold text-slate-500 mb-0.5">15h 15m</span>
-                    <div class="w-full flex items-center gap-1">
-                      <div class="w-1.5 h-1.5 rounded-full border border-[#0090D9] bg-white shrink-0"></div>
-                      <div class="flex-1 h-[2px] bg-gradient-to-r from-[#0090D9] via-amber-400 to-[#0090D9] relative">
-                        <div class="w-1.5 h-1.5 rounded-full bg-amber-500 absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 border border-white"></div>
-                      </div>
-                      <div class="w-1.5 h-1.5 rounded-full bg-[#0090D9] shrink-0"></div>
-                    </div>
-                    <span class="text-[9px] font-medium text-amber-600 mt-0.5">Escale à Rome (FCO)</span>
-                  </div>
-
-                  <div class="text-right">
-                    <div class="text-xl sm:text-2xl font-black text-[#07325B] leading-none">20:40</div>
-                    <div class="text-xs font-bold text-slate-700 mt-0.5">CDG</div>
-                    <div class="text-[10px] text-slate-500 leading-tight">Paris</div>
-                  </div>
-                </div>
-
-                <div class="mt-2.5 pt-1.5 border-t border-sky-100/80 flex items-center justify-between text-[10px] text-slate-500">
-                  <span>24 Mars 2026</span>
-                  <span class="text-slate-600 font-medium">Terminal 1 → 2F</span>
-                </div>
-              </div>
-
-              <!-- SECTION 2: YELLOW (Flight Details & 2 Baggage Types) -->
-              <div class="lg:col-span-4 bg-gradient-to-br from-[#F5B819]/15 via-[#F5B819]/5 to-white p-3.5 sm:p-4 border-b lg:border-b-0 lg:border-r border-amber-200/70 flex flex-col justify-center gap-2.5">
-                <div>
-                  <div class="text-sm font-bold text-slate-800 flex items-center gap-1.5">
-                    <span>Airbus A320-200</span>
-                    <span class="text-amber-400">•</span>
-                    <span class="text-slate-600 font-medium">Économique</span>
-                  </div>
-                  <!-- Two Baggage Types: Soute + Cabine -->
-                  <div class="flex flex-wrap items-center gap-x-2.5 gap-y-1 text-xs text-slate-600 mt-1.5">
-                    <div class="flex items-center gap-1" title="Bagage en soute">
-                      <svg class="w-3.5 h-3.5 text-amber-700 shrink-0" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10"/></svg>
-                      <span>Soute : <strong class="text-slate-800 font-semibold">1 × 23 kg</strong></span>
-                    </div>
-                    <span class="text-amber-300">•</span>
-                    <div class="flex items-center gap-1" title="Bagage en cabine">
-                      <svg class="w-3.5 h-3.5 text-amber-700 shrink-0" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M20 7l-8-4-8 4m16 0l-8 4m8-4v10l-8 4m0-10L4 7m8 4v10M4 7v10l8 4"/></svg>
-                      <span>Cabine : <strong class="text-slate-800 font-semibold">1 × 8 kg</strong></span>
-                    </div>
-                  </div>
-                </div>
-
-                <div class="flex flex-wrap items-center gap-1.5 pt-2 border-t border-amber-200/50">
-                  <span class="inline-flex items-center gap-1 text-[10px] font-semibold px-2 py-0.5 rounded-full bg-slate-100 text-slate-600">
-                    <span class="w-1.5 h-1.5 rounded-full bg-slate-400"></span>
-                    Non remboursable
-                  </span>
-                  <span class="inline-flex items-center gap-1 text-[10px] font-semibold px-2 py-0.5 rounded-full bg-amber-100/90 text-amber-900">
-                    <span class="w-1.5 h-1.5 rounded-full bg-amber-500"></span>
-                    Modifiable
-                  </span>
-                </div>
-              </div>
-
-              <!-- SECTION 3: GREEN (Prix & Réservation) -->
-              <div class="lg:col-span-3 bg-gradient-to-br from-emerald-500/10 via-emerald-500/5 to-white p-3.5 sm:p-4 flex flex-col justify-center items-center lg:items-end text-center lg:text-right">
-                <div class="w-full">
-                  <div class="text-[10px] font-bold uppercase tracking-wider text-slate-400 leading-none">Prix total TTC</div>
-                  <div class="mt-1">
-                    <span class="text-2xl font-black text-slate-900 tracking-tight">48 770</span>
-                    <span class="text-xs font-black text-emerald-700 ml-0.5">DZD</span>
-                  </div>
-                  <div class="text-[10px] text-slate-500 mt-0.5 leading-none">Par passager</div>
-                </div>
-
-                <div class="w-full mt-2.5">
-                  <button onclick="bookFlight('ITA Airways', '04:25', '20:40', '1 escale FCO (15h15)', '48,770.00 DZD')" class="w-full bg-gradient-to-r from-emerald-500 to-teal-600 hover:from-emerald-600 hover:to-teal-700 text-white font-extrabold py-2.5 px-4 rounded-xl shadow-md shadow-emerald-500/20 hover:shadow-lg hover:shadow-emerald-500/30 flex items-center justify-center gap-2 text-sm transition-all duration-200 cursor-pointer transform hover:-translate-y-0.5">
-                    <span>Choisir ce vol</span>
-                    <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M14 5l7 7m0 0l-7 7m7-7H3"/></svg>
-                  </button>
-                </div>
-              </div>
-
+          <article data-card-airline="az" class="group bg-white rounded-2xl border border-slate-200/80 shadow-[0_2px_12px_rgba(0,0,0,0.03)] hover:shadow-[0_8px_24px_rgba(0,144,217,0.10)] hover:border-[#0090D9]/30 transition-all duration-300 overflow-hidden border-l-4 border-l-[#0090D9]">
+            <div class="p-4 flex flex-col gap-3 lg:hidden">
+              <div class="flex items-center justify-between gap-2"><div class="flex items-center gap-2.5"><div class="w-9 h-9 rounded-xl bg-slate-50 border border-slate-200 flex items-center justify-center p-1.5 shrink-0"><img src="assets/airlines/ita-airways.svg" alt="ITA Airways" class="w-full h-full object-contain"></div><div><div class="text-sm font-extrabold text-[#07325B]">ITA Airways</div><div class="text-[11px] text-slate-400">Vol AZ 803</div></div></div><span class="inline-flex items-center gap-1 px-2.5 py-0.5 rounded-full text-[11px] font-bold bg-slate-100 text-slate-600 border border-slate-200 shrink-0"><span class="w-1.5 h-1.5 rounded-full bg-[#F5B819]"></span>1 escale (FCO)</span></div>
+              <div class="flex items-center justify-between gap-2"><div><div class="text-2xl font-black text-[#07325B]">04:25</div><div class="text-xs font-bold text-slate-700">ALG — Alger</div></div><div class="flex-1 flex flex-col items-center px-2"><span class="text-[10px] font-bold text-slate-400 mb-1">15h 15m</span><div class="w-full flex items-center gap-1"><div class="w-1.5 h-1.5 rounded-full border-2 border-[#0090D9] bg-white shrink-0"></div><div class="flex-1 h-[1.5px] bg-slate-200 relative"><div class="w-1.5 h-1.5 rounded-full bg-[#F5B819] absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 border border-white"></div></div><div class="w-1.5 h-1.5 rounded-full bg-[#0090D9] shrink-0"></div></div><span class="text-[9px] font-semibold text-slate-500 mt-1">Escale Rome (FCO)</span></div><div class="text-right"><div class="text-2xl font-black text-[#07325B]">20:40</div><div class="text-xs font-bold text-slate-700">CDG — Paris</div></div></div>
+              <div class="flex items-start justify-between gap-3 pt-3 border-t border-slate-100"><div class="text-xs text-slate-500"><div class="font-semibold text-slate-700">Airbus A320-200 · Éco.</div><div class="mt-1"><span class="inline-flex items-center gap-1"><span class="w-1.5 h-1.5 rounded-full bg-slate-400"></span>Non remboursable</span></div><div class="mt-1 text-slate-400">Soute 23 kg · Cabine 8 kg</div></div><div class="text-right shrink-0"><div class="text-[10px] text-slate-400 uppercase font-bold tracking-wide">Total TTC</div><div class="text-xl font-black text-[#07325B] leading-tight">48 770 <span class="text-xs font-normal text-slate-500">DZD</span></div><button onclick="bookFlight('ITA Airways', '48,770.00 DZD')" class="mt-2 bg-[#34D399] hover:bg-[#2bbf88] text-white font-extrabold py-2 px-4 rounded-xl text-sm flex items-center gap-1.5 transition cursor-pointer whitespace-nowrap">Choisir <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M14 5l7 7m0 0l-7 7m7-7H3"/></svg></button></div></div>
+            </div>
+            <div class="hidden lg:grid lg:grid-cols-12">
+              <div class="lg:col-span-5 p-5 border-r border-slate-100 flex flex-col justify-between"><div class="flex items-center justify-between gap-3 mb-3"><div class="flex items-center gap-2.5"><div class="w-9 h-9 rounded-xl bg-slate-50 border border-slate-200 flex items-center justify-center p-1.5 shrink-0"><img src="assets/airlines/ita-airways.svg" alt="ITA Airways" class="w-full h-full object-contain"></div><div><div class="text-sm font-extrabold text-[#07325B]">ITA Airways</div><div class="text-[11px] text-slate-400">Vol AZ 803</div></div></div><span class="inline-flex items-center gap-1 px-2.5 py-0.5 rounded-full text-[11px] font-bold bg-slate-100 text-slate-600 border border-slate-200"><span class="w-1.5 h-1.5 rounded-full bg-[#F5B819]"></span>1 escale (FCO)</span></div><div class="flex items-center justify-between gap-3"><div><div class="text-2xl font-black text-[#07325B]">04:25</div><div class="text-xs font-bold text-slate-700 mt-0.5">ALG</div><div class="text-[10px] text-slate-400">Alger</div></div><div class="flex-1 flex flex-col items-center px-3"><span class="text-[10px] font-bold text-slate-400 mb-1">15h 15m</span><div class="w-full flex items-center gap-1"><div class="w-1.5 h-1.5 rounded-full border-2 border-[#0090D9] bg-white shrink-0"></div><div class="flex-1 h-[1.5px] bg-slate-200 relative"><div class="w-1.5 h-1.5 rounded-full bg-[#F5B819] absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 border border-white"></div></div><div class="w-1.5 h-1.5 rounded-full bg-[#0090D9] shrink-0"></div></div><span class="text-[9px] font-semibold text-slate-500 mt-1">Escale à Rome (FCO)</span></div><div class="text-right"><div class="text-2xl font-black text-[#07325B]">20:40</div><div class="text-xs font-bold text-slate-700 mt-0.5">CDG</div><div class="text-[10px] text-slate-400">Paris</div></div></div><div class="mt-3 pt-2 border-t border-slate-100 flex items-center justify-between text-[10px] text-slate-400"><span>24 Mars 2026</span><span class="font-semibold">Terminal 1 → 2F</span></div></div>
+              <div class="lg:col-span-4 p-5 border-r border-slate-100 flex flex-col justify-center gap-3"><div><div class="text-sm font-bold text-slate-800">Airbus A320-200 <span class="text-slate-300">·</span> <span class="text-slate-500 font-medium">Économique</span></div><div class="flex flex-wrap gap-x-3 gap-y-1 text-xs text-slate-500 mt-2"><div class="flex items-center gap-1.5"><svg class="w-3.5 h-3.5 text-slate-400 shrink-0" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10"/></svg>Soute : <strong class="text-slate-700">1 × 23 kg</strong></div><div class="flex items-center gap-1.5"><svg class="w-3.5 h-3.5 text-slate-400 shrink-0" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M20 7l-8-4-8 4m16 0l-8 4m8-4v10l-8 4m0-10L4 7m8 4v10M4 7v10l8 4"/></svg>Cabine : <strong class="text-slate-700">1 × 8 kg</strong></div></div></div><div class="flex flex-wrap gap-1.5 pt-2.5 border-t border-slate-100"><span class="inline-flex items-center gap-1 text-[10px] font-semibold px-2 py-0.5 rounded-full bg-slate-100 text-slate-600"><span class="w-1.5 h-1.5 rounded-full bg-slate-400"></span>Non remboursable</span><span class="inline-flex items-center gap-1 text-[10px] font-semibold px-2 py-0.5 rounded-full bg-slate-100 text-slate-600"><span class="w-1.5 h-1.5 rounded-full bg-[#F5B819]"></span>Modifiable</span></div></div>
+              <div class="lg:col-span-3 p-5 flex flex-col justify-center items-end gap-3"><div class="text-right"><div class="text-[10px] font-bold uppercase tracking-wider text-slate-400">Prix total TTC</div><div class="mt-1 flex items-baseline gap-1 justify-end"><span class="text-2xl font-black text-[#07325B]">48 770</span><span class="text-xs text-slate-500">DZD</span></div><div class="text-[10px] text-slate-400 mt-0.5">Par passager</div></div><button onclick="bookFlight('ITA Airways', '48,770.00 DZD')" class="w-full bg-[#34D399] hover:bg-[#2bbf88] text-white font-extrabold py-2.5 px-4 rounded-xl shadow-sm flex items-center justify-center gap-2 text-sm transition cursor-pointer transform hover:-translate-y-0.5">Choisir ce vol <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M14 5l7 7m0 0l-7 7m7-7H3"/></svg></button></div>
             </div>
           </article>
 
           <!-- ==================== CARD 3: AIR FRANCE ==================== -->
-          <article data-card-airline="af" class="group bg-white rounded-2xl border border-slate-200/80 shadow-[0_2px_12px_rgba(0,0,0,0.03)] hover:shadow-[0_8px_24px_rgba(0,144,217,0.12)] hover:border-[#0090D9]/40 transition-all duration-300 overflow-hidden">
-            <div class="grid grid-cols-1 lg:grid-cols-12">
-              
-              <!-- SECTION 1: BLUE (Route & Horaires) -->
-              <div class="lg:col-span-5 bg-gradient-to-br from-[#0090D9]/10 via-[#0090D9]/5 to-white p-3.5 sm:p-4 border-b lg:border-b-0 lg:border-r border-sky-100 flex flex-col justify-between">
-                <!-- Top airline info -->
-                <div class="flex items-center justify-between gap-3 mb-2.5">
-                  <div class="flex items-center gap-2.5">
-                    <div class="w-9 h-9 rounded-lg bg-white border border-sky-100 shadow-xs flex items-center justify-center p-1 shrink-0">
-                      <img src="assets/airlines/air-france.svg" alt="Air France" class="w-full h-full object-contain">
-                    </div>
-                    <div>
-                      <div class="text-sm font-extrabold text-[#07325B] tracking-tight leading-none">Air France</div>
-                      <div class="text-[11px] font-semibold text-slate-500 mt-0.5">Vol AF 1385</div>
-                    </div>
-                  </div>
-                  <span class="inline-flex items-center gap-1 px-2.5 py-0.5 rounded-full text-[11px] font-bold bg-[#0090D9]/15 text-[#0077b6] border border-[#0090D9]/20">
-                    <span class="w-1.5 h-1.5 rounded-full bg-[#0090D9]"></span>
-                    Direct
-                  </span>
-                </div>
-
-                <!-- Flight Times & Route -->
-                <div class="flex items-center justify-between gap-3 my-1">
-                  <div class="text-left">
-                    <div class="text-xl sm:text-2xl font-black text-[#07325B] leading-none">06:30</div>
-                    <div class="text-xs font-bold text-slate-700 mt-0.5">ALG</div>
-                    <div class="text-[10px] text-slate-500 leading-tight">Alger</div>
-                  </div>
-
-                  <div class="flex-1 flex flex-col items-center px-2">
-                    <span class="text-[10px] font-bold text-slate-500 mb-0.5">2h 40m</span>
-                    <div class="w-full flex items-center gap-1">
-                      <div class="w-1.5 h-1.5 rounded-full border border-[#0090D9] bg-white shrink-0"></div>
-                      <div class="flex-1 h-[2px] bg-gradient-to-r from-[#0090D9] via-sky-400 to-[#0090D9] relative">
-                        <svg class="w-3 h-3 text-[#0090D9] absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 rotate-90" fill="currentColor" viewBox="0 0 24 24">
-                          <path d="M21 16v-2l-8-5V3.5c0-.83-.67-1.5-1.5-1.5S10 2.67 10 3.5V9l-8 5v2l8-2.5V19l-2 1.5V22l3.5-1 3.5 1v-1.5L13 19v-5.5l8 2.5z"/>
-                        </svg>
-                      </div>
-                      <div class="w-1.5 h-1.5 rounded-full bg-[#0090D9] shrink-0"></div>
-                    </div>
-                    <span class="text-[9px] font-medium text-emerald-600 mt-0.5">Sans escale</span>
-                  </div>
-
-                  <div class="text-right">
-                    <div class="text-xl sm:text-2xl font-black text-[#07325B] leading-none">10:10</div>
-                    <div class="text-xs font-bold text-slate-700 mt-0.5">CDG</div>
-                    <div class="text-[10px] text-slate-500 leading-tight">Paris</div>
-                  </div>
-                </div>
-
-                <div class="mt-2.5 pt-1.5 border-t border-sky-100/80 flex items-center justify-between text-[10px] text-slate-500">
-                  <span>24 Mars 2026</span>
-                  <span class="text-[#0090D9] font-medium">Terminal 1 → 2E</span>
-                </div>
-              </div>
-
-              <!-- SECTION 2: YELLOW (Flight Details & 2 Baggage Types) -->
-              <div class="lg:col-span-4 bg-gradient-to-br from-[#F5B819]/15 via-[#F5B819]/5 to-white p-3.5 sm:p-4 border-b lg:border-b-0 lg:border-r border-amber-200/70 flex flex-col justify-center gap-2.5">
-                <div>
-                  <div class="text-sm font-bold text-slate-800 flex items-center gap-1.5">
-                    <span>Airbus A320</span>
-                    <span class="text-amber-400">•</span>
-                    <span class="text-slate-600 font-medium">Économique</span>
-                  </div>
-                  <!-- Two Baggage Types: Soute + Cabine -->
-                  <div class="flex flex-wrap items-center gap-x-2.5 gap-y-1 text-xs text-slate-600 mt-1.5">
-                    <div class="flex items-center gap-1" title="Bagage en soute">
-                      <svg class="w-3.5 h-3.5 text-amber-700 shrink-0" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10"/></svg>
-                      <span>Soute : <strong class="text-slate-800 font-semibold">1 × 23 kg</strong></span>
-                    </div>
-                    <span class="text-amber-300">•</span>
-                    <div class="flex items-center gap-1" title="Bagage en cabine">
-                      <svg class="w-3.5 h-3.5 text-amber-700 shrink-0" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M20 7l-8-4-8 4m16 0l-8 4m8-4v10l-8 4m0-10L4 7m8 4v10M4 7v10l8 4"/></svg>
-                      <span>Cabine : <strong class="text-slate-800 font-semibold">1 × 12 kg</strong></span>
-                    </div>
-                  </div>
-                </div>
-
-                <div class="flex flex-wrap items-center gap-1.5 pt-2 border-t border-amber-200/50">
-                  <span class="inline-flex items-center gap-1 text-[10px] font-semibold px-2 py-0.5 rounded-full bg-emerald-100/90 text-emerald-800">
-                    <span class="w-1.5 h-1.5 rounded-full bg-emerald-500"></span>
-                    Remboursable
-                  </span>
-                  <span class="inline-flex items-center gap-1 text-[10px] font-semibold px-2 py-0.5 rounded-full bg-amber-100/90 text-amber-900">
-                    <span class="w-1.5 h-1.5 rounded-full bg-amber-500"></span>
-                    Modifiable
-                  </span>
-                </div>
-              </div>
-
-              <!-- SECTION 3: GREEN (Prix & Réservation) -->
-              <div class="lg:col-span-3 bg-gradient-to-br from-emerald-500/10 via-emerald-500/5 to-white p-3.5 sm:p-4 flex flex-col justify-center items-center lg:items-end text-center lg:text-right">
-                <div class="w-full">
-                  <div class="text-[10px] font-bold uppercase tracking-wider text-slate-400 leading-none">Prix total TTC</div>
-                  <div class="mt-1">
-                    <span class="text-2xl font-black text-slate-900 tracking-tight">65 451</span>
-                    <span class="text-xs font-black text-emerald-700 ml-0.5">DZD</span>
-                  </div>
-                  <div class="text-[10px] text-slate-500 mt-0.5 leading-none">Par passager</div>
-                </div>
-
-                <div class="w-full mt-2.5">
-                  <button onclick="bookFlight('Air France', '06:30', '10:10', 'Direct (2h40)', '65,451.00 DZD')" class="w-full bg-gradient-to-r from-emerald-500 to-teal-600 hover:from-emerald-600 hover:to-teal-700 text-white font-extrabold py-2.5 px-4 rounded-xl shadow-md shadow-emerald-500/20 hover:shadow-lg hover:shadow-emerald-500/30 flex items-center justify-center gap-2 text-sm transition-all duration-200 cursor-pointer transform hover:-translate-y-0.5">
-                    <span>Choisir ce vol</span>
-                    <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M14 5l7 7m0 0l-7 7m7-7H3"/></svg>
-                  </button>
-                </div>
-              </div>
-
+          <article data-card-airline="af" class="group bg-white rounded-2xl border border-slate-200/80 shadow-[0_2px_12px_rgba(0,0,0,0.03)] hover:shadow-[0_8px_24px_rgba(0,144,217,0.10)] hover:border-[#0090D9]/30 transition-all duration-300 overflow-hidden border-l-4 border-l-[#0090D9]">
+            <div class="p-4 flex flex-col gap-3 lg:hidden">
+              <div class="flex items-center justify-between gap-2"><div class="flex items-center gap-2.5"><div class="w-9 h-9 rounded-xl bg-slate-50 border border-slate-200 flex items-center justify-center p-1.5 shrink-0"><img src="assets/airlines/air-france.svg" alt="Air France" class="w-full h-full object-contain"></div><div><div class="text-sm font-extrabold text-[#07325B]">Air France</div><div class="text-[11px] text-slate-400">Vol AF 1385</div></div></div><span class="inline-flex items-center gap-1 px-2.5 py-0.5 rounded-full text-[11px] font-bold bg-[#0090D9]/10 text-[#0090D9] border border-[#0090D9]/20 shrink-0"><span class="w-1.5 h-1.5 rounded-full bg-[#0090D9]"></span>Direct</span></div>
+              <div class="flex items-center justify-between gap-2"><div><div class="text-2xl font-black text-[#07325B]">06:30</div><div class="text-xs font-bold text-slate-700">ALG — Alger</div></div><div class="flex-1 flex flex-col items-center px-2"><span class="text-[10px] font-bold text-slate-400 mb-1">2h 40m</span><div class="w-full flex items-center gap-1"><div class="w-1.5 h-1.5 rounded-full border-2 border-[#0090D9] bg-white shrink-0"></div><div class="flex-1 h-[1.5px] bg-[#0090D9]/30 relative"><svg class="w-3.5 h-3.5 text-[#0090D9] absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 rotate-90" fill="currentColor" viewBox="0 0 24 24"><path d="M21 16v-2l-8-5V3.5c0-.83-.67-1.5-1.5-1.5S10 2.67 10 3.5V9l-8 5v2l8-2.5V19l-2 1.5V22l3.5-1 3.5 1v-1.5L13 19v-5.5l8 2.5z"/></svg></div><div class="w-1.5 h-1.5 rounded-full bg-[#0090D9] shrink-0"></div></div><span class="text-[9px] font-semibold text-[#34D399] mt-1">Sans escale</span></div><div class="text-right"><div class="text-2xl font-black text-[#07325B]">10:10</div><div class="text-xs font-bold text-slate-700">CDG — Paris</div></div></div>
+              <div class="flex items-start justify-between gap-3 pt-3 border-t border-slate-100"><div class="text-xs text-slate-500"><div class="font-semibold text-slate-700">Airbus A320 · Éco.</div><div class="mt-1 flex flex-wrap gap-x-3"><span class="inline-flex items-center gap-1"><span class="w-1.5 h-1.5 rounded-full bg-[#34D399]"></span>Remboursable</span><span class="inline-flex items-center gap-1"><span class="w-1.5 h-1.5 rounded-full bg-[#F5B819]"></span>Modifiable</span></div><div class="mt-1 text-slate-400">Soute 23 kg · Cabine 12 kg</div></div><div class="text-right shrink-0"><div class="text-[10px] text-slate-400 uppercase font-bold tracking-wide">Total TTC</div><div class="text-xl font-black text-[#07325B] leading-tight">65 451 <span class="text-xs font-normal text-slate-500">DZD</span></div><button onclick="bookFlight('Air France', '65,451.00 DZD')" class="mt-2 bg-[#34D399] hover:bg-[#2bbf88] text-white font-extrabold py-2 px-4 rounded-xl text-sm flex items-center gap-1.5 transition cursor-pointer whitespace-nowrap">Choisir <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M14 5l7 7m0 0l-7 7m7-7H3"/></svg></button></div></div>
+            </div>
+            <div class="hidden lg:grid lg:grid-cols-12">
+              <div class="lg:col-span-5 p-5 border-r border-slate-100 flex flex-col justify-between"><div class="flex items-center justify-between gap-3 mb-3"><div class="flex items-center gap-2.5"><div class="w-9 h-9 rounded-xl bg-slate-50 border border-slate-200 flex items-center justify-center p-1.5 shrink-0"><img src="assets/airlines/air-france.svg" alt="Air France" class="w-full h-full object-contain"></div><div><div class="text-sm font-extrabold text-[#07325B]">Air France</div><div class="text-[11px] text-slate-400">Vol AF 1385</div></div></div><span class="inline-flex items-center gap-1 px-2.5 py-0.5 rounded-full text-[11px] font-bold bg-[#0090D9]/10 text-[#0090D9] border border-[#0090D9]/20"><span class="w-1.5 h-1.5 rounded-full bg-[#0090D9]"></span>Direct</span></div><div class="flex items-center justify-between gap-3"><div><div class="text-2xl font-black text-[#07325B]">06:30</div><div class="text-xs font-bold text-slate-700 mt-0.5">ALG</div><div class="text-[10px] text-slate-400">Alger</div></div><div class="flex-1 flex flex-col items-center px-3"><span class="text-[10px] font-bold text-slate-400 mb-1">2h 40m</span><div class="w-full flex items-center gap-1"><div class="w-1.5 h-1.5 rounded-full border-2 border-[#0090D9] bg-white shrink-0"></div><div class="flex-1 h-[1.5px] bg-[#0090D9]/30 relative"><svg class="w-3.5 h-3.5 text-[#0090D9] absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 rotate-90" fill="currentColor" viewBox="0 0 24 24"><path d="M21 16v-2l-8-5V3.5c0-.83-.67-1.5-1.5-1.5S10 2.67 10 3.5V9l-8 5v2l8-2.5V19l-2 1.5V22l3.5-1 3.5 1v-1.5L13 19v-5.5l8 2.5z"/></svg></div><div class="w-1.5 h-1.5 rounded-full bg-[#0090D9] shrink-0"></div></div><span class="text-[9px] font-semibold text-[#34D399] mt-1">Sans escale</span></div><div class="text-right"><div class="text-2xl font-black text-[#07325B]">10:10</div><div class="text-xs font-bold text-slate-700 mt-0.5">CDG</div><div class="text-[10px] text-slate-400">Paris</div></div></div><div class="mt-3 pt-2 border-t border-slate-100 flex items-center justify-between text-[10px] text-slate-400"><span>24 Mars 2026</span><span class="text-[#0090D9] font-semibold">Terminal 1 → 2E</span></div></div>
+              <div class="lg:col-span-4 p-5 border-r border-slate-100 flex flex-col justify-center gap-3"><div><div class="text-sm font-bold text-slate-800">Airbus A320 <span class="text-slate-300">·</span> <span class="text-slate-500 font-medium">Économique</span></div><div class="flex flex-wrap gap-x-3 gap-y-1 text-xs text-slate-500 mt-2"><div class="flex items-center gap-1.5"><svg class="w-3.5 h-3.5 text-slate-400 shrink-0" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10"/></svg>Soute : <strong class="text-slate-700">1 × 23 kg</strong></div><div class="flex items-center gap-1.5"><svg class="w-3.5 h-3.5 text-slate-400 shrink-0" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M20 7l-8-4-8 4m16 0l-8 4m8-4v10l-8 4m0-10L4 7m8 4v10M4 7v10l8 4"/></svg>Cabine : <strong class="text-slate-700">1 × 12 kg</strong></div></div></div><div class="flex flex-wrap gap-1.5 pt-2.5 border-t border-slate-100"><span class="inline-flex items-center gap-1 text-[10px] font-semibold px-2 py-0.5 rounded-full bg-slate-100 text-slate-600"><span class="w-1.5 h-1.5 rounded-full bg-[#34D399]"></span>Remboursable</span><span class="inline-flex items-center gap-1 text-[10px] font-semibold px-2 py-0.5 rounded-full bg-slate-100 text-slate-600"><span class="w-1.5 h-1.5 rounded-full bg-[#F5B819]"></span>Modifiable</span></div></div>
+              <div class="lg:col-span-3 p-5 flex flex-col justify-center items-end gap-3"><div class="text-right"><div class="text-[10px] font-bold uppercase tracking-wider text-slate-400">Prix total TTC</div><div class="mt-1 flex items-baseline gap-1 justify-end"><span class="text-2xl font-black text-[#07325B]">65 451</span><span class="text-xs text-slate-500">DZD</span></div><div class="text-[10px] text-slate-400 mt-0.5">Par passager</div></div><button onclick="bookFlight('Air France', '65,451.00 DZD')" class="w-full bg-[#34D399] hover:bg-[#2bbf88] text-white font-extrabold py-2.5 px-4 rounded-xl shadow-sm flex items-center justify-center gap-2 text-sm transition cursor-pointer transform hover:-translate-y-0.5">Choisir ce vol <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M14 5l7 7m0 0l-7 7m7-7H3"/></svg></button></div>
             </div>
           </article>
 
           <!-- ==================== CARD 4: TURKISH AIRLINES ==================== -->
-          <article data-card-airline="tk" class="group bg-white rounded-2xl border border-slate-200/80 shadow-[0_2px_12px_rgba(0,0,0,0.03)] hover:shadow-[0_8px_24px_rgba(0,144,217,0.12)] hover:border-[#0090D9]/40 transition-all duration-300 overflow-hidden">
-            <div class="grid grid-cols-1 lg:grid-cols-12">
-              
-              <!-- SECTION 1: BLUE (Route & Horaires) -->
-              <div class="lg:col-span-5 bg-gradient-to-br from-[#0090D9]/10 via-[#0090D9]/5 to-white p-3.5 sm:p-4 border-b lg:border-b-0 lg:border-r border-sky-100 flex flex-col justify-between">
-                <!-- Top airline info -->
-                <div class="flex items-center justify-between gap-3 mb-2.5">
-                  <div class="flex items-center gap-2.5">
-                    <div class="w-9 h-9 rounded-lg bg-white border border-sky-100 shadow-xs flex items-center justify-center p-1 shrink-0">
-                      <img src="assets/airlines/turkish-emblem.svg" alt="Turkish Airlines" class="w-full h-full object-contain">
-                    </div>
-                    <div>
-                      <div class="text-sm font-extrabold text-[#07325B] tracking-tight leading-none">Turkish Airlines</div>
-                      <div class="text-[11px] font-semibold text-slate-500 mt-0.5">Vol TK 652</div>
-                    </div>
-                  </div>
-                  <span class="inline-flex items-center gap-1 px-2.5 py-0.5 rounded-full text-[11px] font-bold bg-amber-500/15 text-amber-700 border border-amber-500/20">
-                    <span class="w-1.5 h-1.5 rounded-full bg-amber-500"></span>
-                    1 escale (IST)
-                  </span>
-                </div>
-
-                <!-- Flight Times & Route -->
-                <div class="flex items-center justify-between gap-3 my-1">
-                  <div class="text-left">
-                    <div class="text-xl sm:text-2xl font-black text-[#07325B] leading-none">12:50</div>
-                    <div class="text-xs font-bold text-slate-700 mt-0.5">ALG</div>
-                    <div class="text-[10px] text-slate-500 leading-tight">Alger</div>
-                  </div>
-
-                  <div class="flex-1 flex flex-col items-center px-2">
-                    <span class="text-[10px] font-bold text-slate-500 mb-0.5">10h 10m</span>
-                    <div class="w-full flex items-center gap-1">
-                      <div class="w-1.5 h-1.5 rounded-full border border-[#0090D9] bg-white shrink-0"></div>
-                      <div class="flex-1 h-[2px] bg-gradient-to-r from-[#0090D9] via-amber-400 to-[#0090D9] relative">
-                        <div class="w-1.5 h-1.5 rounded-full bg-amber-500 absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 border border-white"></div>
-                      </div>
-                      <div class="w-1.5 h-1.5 rounded-full bg-[#0090D9] shrink-0"></div>
-                    </div>
-                    <span class="text-[9px] font-medium text-amber-600 mt-0.5">Escale à Istanbul (IST)</span>
-                  </div>
-
-                  <div class="text-right">
-                    <div class="text-xl sm:text-2xl font-black text-[#07325B] leading-none">22:05</div>
-                    <div class="text-xs font-bold text-slate-700 mt-0.5">CDG</div>
-                    <div class="text-[10px] text-slate-500 leading-tight">Paris</div>
-                  </div>
-                </div>
-
-                <div class="mt-2.5 pt-1.5 border-t border-sky-100/80 flex items-center justify-between text-[10px] text-slate-500">
-                  <span>24 Mars 2026</span>
-                  <span class="text-slate-600 font-medium">Terminal 1 → 2A</span>
-                </div>
-              </div>
-
-              <!-- SECTION 2: YELLOW (Flight Details & 2 Baggage Types) -->
-              <div class="lg:col-span-4 bg-gradient-to-br from-[#F5B819]/15 via-[#F5B819]/5 to-white p-3.5 sm:p-4 border-b lg:border-b-0 lg:border-r border-amber-200/70 flex flex-col justify-center gap-2.5">
-                <div>
-                  <div class="text-sm font-bold text-slate-800 flex items-center gap-1.5">
-                    <span>Boeing 787-9</span>
-                    <span class="text-amber-400">•</span>
-                    <span class="text-slate-600 font-medium">Économique</span>
-                  </div>
-                  <!-- Two Baggage Types: Soute + Cabine -->
-                  <div class="flex flex-wrap items-center gap-x-2.5 gap-y-1 text-xs text-slate-600 mt-1.5">
-                    <div class="flex items-center gap-1" title="Bagage en soute">
-                      <svg class="w-3.5 h-3.5 text-amber-700 shrink-0" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10"/></svg>
-                      <span>Soute : <strong class="text-slate-800 font-semibold">1 × 23 kg</strong></span>
-                    </div>
-                    <span class="text-amber-300">•</span>
-                    <div class="flex items-center gap-1" title="Bagage en cabine">
-                      <svg class="w-3.5 h-3.5 text-amber-700 shrink-0" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M20 7l-8-4-8 4m16 0l-8 4m8-4v10l-8 4m0-10L4 7m8 4v10M4 7v10l8 4"/></svg>
-                      <span>Cabine : <strong class="text-slate-800 font-semibold">1 × 8 kg</strong></span>
-                    </div>
-                  </div>
-                </div>
-
-                <div class="flex flex-wrap items-center gap-1.5 pt-2 border-t border-amber-200/50">
-                  <span class="inline-flex items-center gap-1 text-[10px] font-semibold px-2 py-0.5 rounded-full bg-emerald-100/90 text-emerald-800">
-                    <span class="w-1.5 h-1.5 rounded-full bg-emerald-500"></span>
-                    Remboursable
-                  </span>
-                  <span class="inline-flex items-center gap-1 text-[10px] font-semibold px-2 py-0.5 rounded-full bg-amber-100/90 text-amber-900">
-                    <span class="w-1.5 h-1.5 rounded-full bg-amber-500"></span>
-                    Modifiable
-                  </span>
-                </div>
-              </div>
-
-              <!-- SECTION 3: GREEN (Prix & Réservation) -->
-              <div class="lg:col-span-3 bg-gradient-to-br from-emerald-500/10 via-emerald-500/5 to-white p-3.5 sm:p-4 flex flex-col justify-center items-center lg:items-end text-center lg:text-right">
-                <div class="w-full">
-                  <div class="text-[10px] font-bold uppercase tracking-wider text-slate-400 leading-none">Prix total TTC</div>
-                  <div class="mt-1">
-                    <span class="text-2xl font-black text-slate-900 tracking-tight">73 324</span>
-                    <span class="text-xs font-black text-emerald-700 ml-0.5">DZD</span>
-                  </div>
-                  <div class="text-[10px] text-slate-500 mt-0.5 leading-none">Par passager</div>
-                </div>
-
-                <div class="w-full mt-2.5">
-                  <button onclick="bookFlight('Turkish Airlines', '12:50', '22:05', '1 escale IST (10h10)', '73,324.00 DZD')" class="w-full bg-gradient-to-r from-emerald-500 to-teal-600 hover:from-emerald-600 hover:to-teal-700 text-white font-extrabold py-2.5 px-4 rounded-xl shadow-md shadow-emerald-500/20 hover:shadow-lg hover:shadow-emerald-500/30 flex items-center justify-center gap-2 text-sm transition-all duration-200 cursor-pointer transform hover:-translate-y-0.5">
-                    <span>Choisir ce vol</span>
-                    <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M14 5l7 7m0 0l-7 7m7-7H3"/></svg>
-                  </button>
-                </div>
-              </div>
-
+          <article data-card-airline="tk" class="group bg-white rounded-2xl border border-slate-200/80 shadow-[0_2px_12px_rgba(0,0,0,0.03)] hover:shadow-[0_8px_24px_rgba(0,144,217,0.10)] hover:border-[#0090D9]/30 transition-all duration-300 overflow-hidden border-l-4 border-l-[#0090D9]">
+            <div class="p-4 flex flex-col gap-3 lg:hidden">
+              <div class="flex items-center justify-between gap-2"><div class="flex items-center gap-2.5"><div class="w-9 h-9 rounded-xl bg-slate-50 border border-slate-200 flex items-center justify-center p-1.5 shrink-0"><img src="assets/airlines/turkish-emblem.svg" alt="Turkish Airlines" class="w-full h-full object-contain"></div><div><div class="text-sm font-extrabold text-[#07325B]">Turkish Airlines</div><div class="text-[11px] text-slate-400">Vol TK 652</div></div></div><span class="inline-flex items-center gap-1 px-2.5 py-0.5 rounded-full text-[11px] font-bold bg-slate-100 text-slate-600 border border-slate-200 shrink-0"><span class="w-1.5 h-1.5 rounded-full bg-[#F5B819]"></span>1 escale (IST)</span></div>
+              <div class="flex items-center justify-between gap-2"><div><div class="text-2xl font-black text-[#07325B]">12:50</div><div class="text-xs font-bold text-slate-700">ALG — Alger</div></div><div class="flex-1 flex flex-col items-center px-2"><span class="text-[10px] font-bold text-slate-400 mb-1">10h 10m</span><div class="w-full flex items-center gap-1"><div class="w-1.5 h-1.5 rounded-full border-2 border-[#0090D9] bg-white shrink-0"></div><div class="flex-1 h-[1.5px] bg-slate-200 relative"><div class="w-1.5 h-1.5 rounded-full bg-[#F5B819] absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 border border-white"></div></div><div class="w-1.5 h-1.5 rounded-full bg-[#0090D9] shrink-0"></div></div><span class="text-[9px] font-semibold text-slate-500 mt-1">Escale Istanbul (IST)</span></div><div class="text-right"><div class="text-2xl font-black text-[#07325B]">22:05</div><div class="text-xs font-bold text-slate-700">CDG — Paris</div></div></div>
+              <div class="flex items-start justify-between gap-3 pt-3 border-t border-slate-100"><div class="text-xs text-slate-500"><div class="font-semibold text-slate-700">Boeing 787-9 · Éco.</div><div class="mt-1 flex flex-wrap gap-x-3"><span class="inline-flex items-center gap-1"><span class="w-1.5 h-1.5 rounded-full bg-[#34D399]"></span>Remboursable</span><span class="inline-flex items-center gap-1"><span class="w-1.5 h-1.5 rounded-full bg-[#F5B819]"></span>Modifiable</span></div><div class="mt-1 text-slate-400">Soute 23 kg · Cabine 8 kg</div></div><div class="text-right shrink-0"><div class="text-[10px] text-slate-400 uppercase font-bold tracking-wide">Total TTC</div><div class="text-xl font-black text-[#07325B] leading-tight">73 324 <span class="text-xs font-normal text-slate-500">DZD</span></div><button onclick="bookFlight('Turkish Airlines', '73,324.00 DZD')" class="mt-2 bg-[#34D399] hover:bg-[#2bbf88] text-white font-extrabold py-2 px-4 rounded-xl text-sm flex items-center gap-1.5 transition cursor-pointer whitespace-nowrap">Choisir <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M14 5l7 7m0 0l-7 7m7-7H3"/></svg></button></div></div>
+            </div>
+            <div class="hidden lg:grid lg:grid-cols-12">
+              <div class="lg:col-span-5 p-5 border-r border-slate-100 flex flex-col justify-between"><div class="flex items-center justify-between gap-3 mb-3"><div class="flex items-center gap-2.5"><div class="w-9 h-9 rounded-xl bg-slate-50 border border-slate-200 flex items-center justify-center p-1.5 shrink-0"><img src="assets/airlines/turkish-emblem.svg" alt="Turkish Airlines" class="w-full h-full object-contain"></div><div><div class="text-sm font-extrabold text-[#07325B]">Turkish Airlines</div><div class="text-[11px] text-slate-400">Vol TK 652</div></div></div><span class="inline-flex items-center gap-1 px-2.5 py-0.5 rounded-full text-[11px] font-bold bg-slate-100 text-slate-600 border border-slate-200"><span class="w-1.5 h-1.5 rounded-full bg-[#F5B819]"></span>1 escale (IST)</span></div><div class="flex items-center justify-between gap-3"><div><div class="text-2xl font-black text-[#07325B]">12:50</div><div class="text-xs font-bold text-slate-700 mt-0.5">ALG</div><div class="text-[10px] text-slate-400">Alger</div></div><div class="flex-1 flex flex-col items-center px-3"><span class="text-[10px] font-bold text-slate-400 mb-1">10h 10m</span><div class="w-full flex items-center gap-1"><div class="w-1.5 h-1.5 rounded-full border-2 border-[#0090D9] bg-white shrink-0"></div><div class="flex-1 h-[1.5px] bg-slate-200 relative"><div class="w-1.5 h-1.5 rounded-full bg-[#F5B819] absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 border border-white"></div></div><div class="w-1.5 h-1.5 rounded-full bg-[#0090D9] shrink-0"></div></div><span class="text-[9px] font-semibold text-slate-500 mt-1">Escale à Istanbul (IST)</span></div><div class="text-right"><div class="text-2xl font-black text-[#07325B]">22:05</div><div class="text-xs font-bold text-slate-700 mt-0.5">CDG</div><div class="text-[10px] text-slate-400">Paris</div></div></div><div class="mt-3 pt-2 border-t border-slate-100 flex items-center justify-between text-[10px] text-slate-400"><span>24 Mars 2026</span><span class="font-semibold">Terminal 1 → 2A</span></div></div>
+              <div class="lg:col-span-4 p-5 border-r border-slate-100 flex flex-col justify-center gap-3"><div><div class="text-sm font-bold text-slate-800">Boeing 787-9 <span class="text-slate-300">·</span> <span class="text-slate-500 font-medium">Économique</span></div><div class="flex flex-wrap gap-x-3 gap-y-1 text-xs text-slate-500 mt-2"><div class="flex items-center gap-1.5"><svg class="w-3.5 h-3.5 text-slate-400 shrink-0" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10"/></svg>Soute : <strong class="text-slate-700">1 × 23 kg</strong></div><div class="flex items-center gap-1.5"><svg class="w-3.5 h-3.5 text-slate-400 shrink-0" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M20 7l-8-4-8 4m16 0l-8 4m8-4v10l-8 4m0-10L4 7m8 4v10M4 7v10l8 4"/></svg>Cabine : <strong class="text-slate-700">1 × 8 kg</strong></div></div></div><div class="flex flex-wrap gap-1.5 pt-2.5 border-t border-slate-100"><span class="inline-flex items-center gap-1 text-[10px] font-semibold px-2 py-0.5 rounded-full bg-slate-100 text-slate-600"><span class="w-1.5 h-1.5 rounded-full bg-[#34D399]"></span>Remboursable</span><span class="inline-flex items-center gap-1 text-[10px] font-semibold px-2 py-0.5 rounded-full bg-slate-100 text-slate-600"><span class="w-1.5 h-1.5 rounded-full bg-[#F5B819]"></span>Modifiable</span></div></div>
+              <div class="lg:col-span-3 p-5 flex flex-col justify-center items-end gap-3"><div class="text-right"><div class="text-[10px] font-bold uppercase tracking-wider text-slate-400">Prix total TTC</div><div class="mt-1 flex items-baseline gap-1 justify-end"><span class="text-2xl font-black text-[#07325B]">73 324</span><span class="text-xs text-slate-500">DZD</span></div><div class="text-[10px] text-slate-400 mt-0.5">Par passager</div></div><button onclick="bookFlight('Turkish Airlines', '73,324.00 DZD')" class="w-full bg-[#34D399] hover:bg-[#2bbf88] text-white font-extrabold py-2.5 px-4 rounded-xl shadow-sm flex items-center justify-center gap-2 text-sm transition cursor-pointer transform hover:-translate-y-0.5">Choisir ce vol <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M14 5l7 7m0 0l-7 7m7-7H3"/></svg></button></div>
             </div>
           </article>
 
         </div>
       </section>
+
 
     </div>
   </main>
